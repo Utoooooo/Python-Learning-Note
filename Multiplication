@@ -1,0 +1,10 @@
+#Return product of random amount of numbers
+#https://www.liaoxuefeng.com/wiki/1016959663602400/1017261630425888
+
+def product(*x):
+    if len(x) is 0:
+        return 'empty list'
+    result = 1
+    for n in x:
+        result = result * n
+    return result
