@@ -1,0 +1,12 @@
+#function that finds result of ax^2+bx+c=0
+#https://www.liaoxuefeng.com/wiki/1016959663602400/1017106984190464
+import math
+
+
+def quadratic(a, b, c):
+    solver = b*b - 4*a*c
+    if solver < 0:
+        return 'No Result'
+    x1 = (-b + math.sqrt(solver))/(2*a)
+    x2 = (-b - math.sqrt(solver)) / (2 * a)
+    return [x1, x2]
